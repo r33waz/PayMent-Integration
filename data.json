@@ -1,0 +1,71 @@
+{
+  "courses": [
+    {
+      "module": "Module One",
+      "title": "Introduction to Financial Statements",
+      "topics": [
+        "Accessing Financial Statements",
+        "Audited vs. Unaudited Statements",
+        "Interim Statements",
+        "Importance of Understanding Financial Statements",
+        "General vs. Consolidated Financial Statements",
+        "Industry-specific Statement Variations",
+        "NFRS and GAAP Overview",
+        "Understanding Subsidiaries and Associates"
+      ]
+    },
+    {
+      "module": "Module Two",
+      "title": "Overview of Key Financial Statements",
+      "topics": [
+        "Balance Sheet (Statement of Financial Position)",
+        "Income Statements (Statement of Profit or Loss)",
+        "Statement of Comprehensive Income",
+        "Statement of Changes in Equity",
+        "Statement of Cash Flows"
+      ]
+    },
+    {
+      "module": "Module Three",
+      "title": "Balance Sheet Breakdown",
+      "topics": [
+        "Analyzing Assets, Liabilities, and Capital",
+        "Details on Goodwill",
+        "Deferred Tax Assets and Liabilities"
+      ]
+    },
+    {
+      "module": "Module Four",
+      "title": "Income Statement Breakdown",
+      "topics": [
+        "Income and Expenses",
+        "Profitability and Sustainability Indicators"
+      ]
+    },
+    {
+      "module": "Module five",
+      "title": "Analyzing Comprehensive Income, Changes in Equity, and Cash Flows",
+      "topics": ["Breakdown of Each Statement's Components"]
+    },
+    {
+      "module": "Module Six",
+      "title": "Practical Analysis of Financial Statements",
+      "topics": [
+        "Case Studies from NEPSE Industries (BFIs, M&P, Insurance, Hotels, Hydropower, Trading, Investments)"
+      ]
+    },
+    {
+      "module": "Module Seven",
+      "title": "The Role of Working Notes",
+      "topics": [
+        "Importance for Unbiased Analysis",
+        "Introduction to BASEL III Disclosures",
+        "Tier 1 and 2 Capital",
+        "Capital Adequacy Ratio (CAR)",
+        "Risk-Weighted Assets (RWA)",
+        "Non-Performing Loans (NPL)",
+        "Non-Performing Assets (NPA)"
+      ]
+    }
+  ]
+}
