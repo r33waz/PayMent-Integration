@@ -1,8 +1,5 @@
-import { NextResponse } from "next/server";
 
-// export async function GET() {
-//   return NextResponse.json({ message: "Hello khalti" });
-// }
+import { NextResponse } from "next/server";
 
 export async function POST(data) {
   const options = {
@@ -13,14 +10,7 @@ export async function POST(data) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      amount: data?.amount,
-      purchase_order_id: data?.purchase_order_id,
-      purchase_order_name: data?.purchase_order_name,
-      customer_info: {
-        name: data?.customer_name,
-        email: data?.customer_email,
-        phone: data?.customer_phone,
-      },
+      data,
     }),
   };
 

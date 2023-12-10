@@ -8,10 +8,11 @@ import connect_ips from "../../../../public/connectips-icon.png";
 import { v4 as uuidv4 } from "uuid";
 import CryptoJS from "crypto-js";
 import khalti_data from "../../../../khalti.json";
+import { POST } from "@/app/api/khalti/route";
 
 function Paymnet() {
   const [uuid, setUuid] = useState("");
-  var dataString = "total_amount=100,transaction_uuid=11-201-13,product_code";
+  var dataString ="total_amount,transaction_uuid,product_code";
   var secretKey = "8gBm/:&EnhH.1/q";
   var hash = CryptoJS.HmacSHA256(dataString, secretKey);
   var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
@@ -28,7 +29,7 @@ function Paymnet() {
       customer_phone: khalti_data?.customer_info.phone,
     };
     console.log(JSON.stringify(data));
-    const res = await fetch("http://localhost:3000/api/khalti", data);
+    const res = await POST("http://localhost:3000/api/khalti", data);
     const result = await res.json();
     console.log(result);
   };
@@ -44,11 +45,7 @@ function Paymnet() {
           <h1 className="text-2xl font-bold">Paymant Method</h1>
           <span className="text-sm">Choose payment method to procees</span>
         </div>
-        <Tab.Group
-          onChange={(index) => {
-            console.log("Changed selected tab to:", index);
-          }}
-        >
+        <Tab.Group>
           <Tab.List className="flex flex-wrap p-1 space-x-1 cursor-pointer rounded-xl">
             <Tab as={Fragment}>
               {({ selected }) => (
@@ -156,14 +153,14 @@ function Paymnet() {
                     type="hidden"
                     id="success_url"
                     name="success_url"
-                    value="https://esewa.com.np"
+                    value="http://localhost:3000/"
                     required
                   />
                   <input
                     type="hidden"
                     id="failure_url"
                     name="failure_url"
-                    value="https://google.com"
+                    value="http://localhost:3000/"
                     required
                   />
                   <input
